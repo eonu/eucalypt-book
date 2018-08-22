@@ -6,8 +6,10 @@ description: Initialize a new Eucalypt application.
 
 ### Command
 
-```text
+```bash
 $ eucalypt init
+# Alias/shortened
+$ eucalypt i
 ```
 
 ### Arguments
@@ -52,5 +54,9 @@ $ eucalypt init
 
 ### Examples
 
-
+* `$ eucalypt init my-new-app` - Generates a new application with default options.
+* `$ eucalypt init my-new-app --no-bundle --no-git` - Generates a new application and skips dependency installation and Git respository initialization.
+* `$ eucalypt init my-new-app -b` - Generates a new application and runs blog environment setup.
+* `$ eucalypt init my-new-app -br posts` - Generates a new application and runs blog environment setup at `/posts`.
+* `$ eucalypt init my-new-app -wp` - Generates a new application and sets up Warden authentication and Pundit authorization.
 
