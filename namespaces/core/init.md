@@ -54,9 +54,23 @@ $ eucalypt i
 
 ### Examples
 
-* `$ eucalypt init my-new-app` - Generates a new application with default options.
-* `$ eucalypt init my-new-app --no-bundle --no-git` - Generates a new application and skips dependency installation and Git respository initialization.
-* `$ eucalypt init my-new-app -b` - Generates a new application and runs blog environment setup.
-* `$ eucalypt init my-new-app -br posts` - Generates a new application and runs blog environment setup at `/posts`.
-* `$ eucalypt init my-new-app -wp` - Generates a new application and sets up Warden authentication and Pundit authorization.
+* `$ eucalypt init my-new-app` 
+
+  Generates a new application with default options.
+
+* `$ eucalypt init my-new-app --no-bundle --no-git` 
+
+  Generates a new application and skips dependency installation and Git repository initialization.
+
+* `$ eucalypt init my-new-app -b` 
+
+  Generates a new application and runs blog environment setup.
+
+* `$ eucalypt init my-new-app -br posts` 
+
+  Generates a new application and runs blog environment setup at `/posts`.
+
+* `$ eucalypt init my-new-app -wp` 
+
+  Generates a new application and sets up Warden authentication and Pundit authorization.
 
