@@ -1,6 +1,5 @@
 ---
-description: >-
-  Micro-framework and CLI wrapped around the Sinatra DSL.
+description: Micro-framework and CLI wrapped around the Sinatra DSL.
 ---
 
 # eucalypt
