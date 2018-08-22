@@ -2,7 +2,7 @@
 
 * [eucalypt](README.md)
 * [Installation](installation.md)
-* [Namespaces](namespaces/README.md)
+* [CLI](namespaces/README.md)
   * [Core](namespaces/core/README.md)
     * [Init](namespaces/core/init.md)
     * [Launch](namespaces/core/launch.md)
