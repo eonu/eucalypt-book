@@ -58,9 +58,13 @@ $ eucalypt i
 
   Generates a new application with default options.
 
+* `$ eucalypt init my-new-app -s`
+
+  Generates a new application and silences the `bundle install` and `git init` commands.
+
 * `$ eucalypt init my-new-app --no-bundle --no-git` 
 
-  Generates a new application and skips dependency installation and Git repository initialization.
+  Generates a new application and skips dependency installation \(`bundle install`\) and Git repository initialization \(`git init`\).
 
 * `$ eucalypt init my-new-app -b` 
 
