@@ -12,7 +12,7 @@ $ eucalypt init
 
 ### Arguments
 
-* `[NAME]` - The name of the new Eucalypt application \(note that this is simply a directory name and **cannot** be a path such as `apps/my-new-app`\).
+* `[NAME]` - The name of the new application \(note that this is simply a directory name and **cannot** be a path such as `apps/my-new-app`\).
 
 ### Options/flags
 
