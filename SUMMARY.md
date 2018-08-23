@@ -9,7 +9,7 @@
     * [Console](namespaces/core/console.md)
     * [Test](namespaces/core/test.md)
     * [Version](namespaces/core/version.md)
-    * [Help](namespaces/core/help.md)
+    * [Help \(-H\)](namespaces/core/help.md)
   * [Generate](namespaces/generate.md)
   * [Destroy](namespaces/destroy.md)
   * [Blog](namespaces/blog.md)
