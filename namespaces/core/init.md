@@ -1,5 +1,5 @@
 ---
-description: Initialize a new Eucalypt application.
+description: Initialize a new application.
 ---
 
 # Init
