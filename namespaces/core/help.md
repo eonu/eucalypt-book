@@ -1,7 +1,7 @@
 ---
 description: >-
-  Display additional information about other commands (about their arguments and
-  options).
+  Display additional information about other commands and their arguments and
+  options.
 ---
 
 # Help \(-H\)
