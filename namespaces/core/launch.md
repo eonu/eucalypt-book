@@ -14,13 +14,13 @@ $ eucalypt l
 
 ### Arguments
 
-* `[ENV]` - The Rack environment to serve the application on. This can be one of:
+* `[ENV]` - The environment to serve the application on. This can be one of:
 
   * `production` alias `p`
   * `development` alias `d` 
   * `test` alias `t`
 
-  Defaults to the value of the `RACK_ENV` environment variable. If this is not set, then the default environment is `development`.
+  Defaults to the value of the `APP_ENV` environment variable. If this is not set, then the default environment is `development`.
 
 ### Options/flags
 
