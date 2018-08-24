@@ -18,7 +18,8 @@
     * [Controller](namespaces/destroy/controller.md)
     * [Model](namespaces/destroy/model.md)
     * [Scaffold](namespaces/destroy/scaffold.md)
-  * [Blog](namespaces/blog.md)
+  * [Blog](namespaces/blog/README.md)
+    * [Setup](namespaces/blog/setup.md)
   * [Migration](namespaces/migration.md)
   * [Security](namespaces/security.md)
 
