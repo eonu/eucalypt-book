@@ -20,6 +20,11 @@
     * [Scaffold](namespaces/destroy/scaffold.md)
   * [Blog](namespaces/blog/README.md)
     * [Setup](namespaces/blog/setup.md)
+    * [Article](namespaces/blog/article/README.md)
+      * [List](namespaces/blog/article/list.md)
+      * [Generate](namespaces/blog/article/generate.md)
+      * [Destroy](namespaces/blog/article/destroy.md)
+      * [Edit](namespaces/blog/article/edit.md)
   * [Migration](namespaces/migration.md)
   * [Security](namespaces/security.md)
 
