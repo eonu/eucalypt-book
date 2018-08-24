@@ -39,7 +39,7 @@ $ eucalypt g c
 
   Generates a new controller without a corresponding spec file.
 
-* `$ eucalypt generate controller tweet -r`
+* `$ eucalypt g controller tweet -r`
 
   Generates a REST-style controller.
 

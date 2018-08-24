@@ -37,11 +37,11 @@ $ eucalypt g m
 
 * `$ eucalypt g model tweet text:string likes:integer`
 
-  Generates a new model with default options \(and three columns\)
+  Generates a new model with default options \(and two columns\)
 
 * `$ eucalypt g model tweet text:string likes:integer --no-spec`
 
-  Generates a new model without a corresponding spec file \(and three columns\).
+  Generates a new model without a corresponding spec file \(and two columns\).
 
 * `$ eucalypt g model tweet --no-table`
 
