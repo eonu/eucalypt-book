@@ -17,3 +17,9 @@ $ eucalypt d s
 
 * `[NAME]` - The name of the scaffold.
 
+### Examples
+
+* `$ eucalypt d scaffold tweet`
+
+  Destroys the `tweet` scaffold.
+

@@ -17,3 +17,9 @@ $ eucalypt d c
 
 * `[NAME]` - The name of the controller.
 
+### Examples
+
+* `$ eucalypt d controller tweet`
+
+  Destroys the `tweet` controller.
+
