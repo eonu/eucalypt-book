@@ -24,7 +24,9 @@
       * [List](namespaces/blog/article/list.md)
       * [Generate](namespaces/blog/article/generate.md)
       * [Destroy](namespaces/blog/article/destroy.md)
-      * [Edit](namespaces/blog/article/edit.md)
+      * [Edit](namespaces/blog/article/edit/README.md)
+        * [Urltitle](namespaces/blog/article/edit/urltitle.md)
+        * [Datetime](namespaces/blog/article/edit/datetime.md)
   * [Migration](namespaces/migration.md)
   * [Security](namespaces/security.md)
 
