@@ -9,6 +9,7 @@ description: Generates a controller.
 ```ruby
 $ eucalypt generate controller
 # Alias/shortened
+$ eucalypt g controller
 $ eucalypt g c
 ```
 
@@ -30,11 +31,11 @@ $ eucalypt g c
 
 ### Examples
 
-* `$ eucalypt generate controller tweet`
+* `$ eucalypt g controller tweet`
 
   Generates a new controller with default options.
 
-* `$ eucalypt generate controller tweet --no-spec`
+* `$ eucalypt g controller tweet --no-spec`
 
   Generates a new controller without a corresponding spec file.
 
