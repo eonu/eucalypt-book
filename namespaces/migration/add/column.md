@@ -26,7 +26,7 @@ $ eucalypt m a c
 
 * `--options` alias `-o` _\(Possible values: \[limit, default, null, precision, scale\]\)_
 
-  Additional options for the table.
+  Additional options for the column.
 
 ### Examples
 

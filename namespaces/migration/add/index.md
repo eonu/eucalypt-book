@@ -28,7 +28,7 @@ $ eucalypt m a i
 
 * `--options` alias `-o` _\(Possible values: \[unique, length, where, using, type\]\)_
 
-  Additional options for the table.
+  Additional options for the index.
 
 ### Examples
 
