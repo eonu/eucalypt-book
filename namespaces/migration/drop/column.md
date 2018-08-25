@@ -19,9 +19,9 @@ $ eucalypt m d c
 * `[TABLE]` - The name of the table.
 * `[NAME]` -  The name of the column.
 
-### Example
+### Examples
 
-* \`$ eucalypt m drop column users email\`
+* `$ eucalypt m drop column users email`
 
   Drops the `email` column from the `users` table.
 

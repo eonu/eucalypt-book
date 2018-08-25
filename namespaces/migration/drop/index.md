@@ -26,7 +26,7 @@ $ eucalypt m d i
 
   The name of the index to remove \(if this flag is active, the `*[COLUMNS]` argument should be empty\).
 
-### Example
+### Examples
 
 * `$ eucalypt m drop index games opening`
 

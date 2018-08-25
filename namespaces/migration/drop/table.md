@@ -18,7 +18,7 @@ $ eucalypt m d t
 
 * `[NAME]` - The name of the table.
 
-### Example
+### Examples
 
 * `$ eucalypt m drop table users`
 
