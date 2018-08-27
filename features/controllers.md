@@ -13,8 +13,10 @@ description: >-
 
 ### Example
 
+{% code-tabs %}
+{% code-tabs-item title="app/controllers/product\_controller.rb" %}
 ```ruby
-class ProductController < Eucalypt::Controller(route: '/products')
+class ProductController < Eucalypt::Controller(route: '/products')
   helpers ProductHelper if defined? ProductHelper
   
   # Route: /products/
@@ -30,6 +32,8 @@ class ProductController < Eucalypt::Controller(route: '/products')
   end
 end
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 * The base route for the controller is specified in line `1`:
 
