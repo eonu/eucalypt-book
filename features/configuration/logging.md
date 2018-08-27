@@ -21,7 +21,7 @@ To write a log message, simply do:
 logger.info "This is a non-severe message."
 ```
 
-By default, only messages above \(and equal to\) the `info` level will be displayed. This can be configured in the [core application file](core-application-file.md).
+By default, only messages above \(and equal to\) the `info` level will be displayed. This can be configured in the `config/logging.rb` file.
 
 ### Development
 

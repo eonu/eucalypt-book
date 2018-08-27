@@ -1,8 +1,8 @@
 ---
-description: Configure Warden authentication.
+description: Sets up Warden authentication.
 ---
 
-# Warden
+# Setup
 
 ### Command
 
