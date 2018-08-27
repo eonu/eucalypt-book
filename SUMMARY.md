@@ -54,4 +54,5 @@
       * [Permission](namespaces/security/policy/permission/README.md)
         * [Generate](namespaces/security/policy/permission/generate.md)
       * [Generate](namespaces/security/policy/generate.md)
+* [Structure](structure.md)
 
