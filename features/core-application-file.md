@@ -7,9 +7,7 @@ description: >-
 
 # Core application file
 
-
-
-### Location {#location}
+## Location
 
 The core application file can be found at `app.rb`.
 

@@ -1,5 +1,9 @@
 # Logging
 
+### Logging
+
+The configuration file can be found at `config/logging.rb`.
+
 ### Overview
 
 Logging \(through the use of the `logger` helper\) will display a log message to STDOUT.
