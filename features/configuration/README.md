@@ -6,7 +6,7 @@ The `config` directory contains more configurations in addition to those in the 
 
 * [Logging](logging.md) - `config/logging.rb`
 * ActiveRecord - `config/active_record.rb`
-* [Asset pipeline](asset-pipeline.md) - `config/asset_pipeline.rb`
+* [Asset pipeline](asset-pipeline/) - `config/asset_pipeline.rb`
 * [Manifest accessor](manifest-accessor.md) - `config/manifest.rb`
 * [Database](database.md) - `config/database.yml`
 * [Initializers](initializers.md) - `config/initializers`

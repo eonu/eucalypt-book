@@ -8,7 +8,7 @@ description: Accessing and storing static YAML and JSON data.
 
 This documentation page is not about serving static assets. Additionally, the `static` directory is not intended to be used for serving static assets \(other than YAML or JSON files\).
 
-For that purpose, view the [asset pipeline](configuration/asset-pipeline.md) documentation page.
+For that purpose, view the [asset pipeline](configuration/asset-pipeline/) documentation page.
 
 ### Description
 
