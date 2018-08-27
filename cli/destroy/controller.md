@@ -15,7 +15,7 @@ $ eucalypt d c
 
 ### Arguments
 
-* `[NAME]` - The name of the controller.
+* `[NAME]` - The name of the controller \(if argument is empty, a list of existing controllers will be displayed for the user to select one from\).
 
 ### Examples
 

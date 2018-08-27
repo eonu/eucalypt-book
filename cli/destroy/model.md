@@ -15,7 +15,7 @@ $ eucalypt d m
 
 ### Arguments
 
-* `[NAME]` - The name of the model.
+* `[NAME]` - The name of the model \(if argument is empty, a list of existing models will be displayed for the user to select one from\).
 
 ### Examples
 

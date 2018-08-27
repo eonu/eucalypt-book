@@ -15,7 +15,7 @@ $ eucalypt d s
 
 ### Arguments
 
-* `[NAME]` - The name of the scaffold.
+* `[NAME]` - The name of the scaffold \(if argument is empty, a list of existing scaffolds will be displayed for the user to select one from\).
 
 ### Examples
 
