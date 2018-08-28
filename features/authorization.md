@@ -15,7 +15,7 @@ Policies achieve authorization through the use of simple instance methods within
 
 #### CLI tasks
 
-* [Policy](../../cli/security/policy/)
+* [Policy](../cli/security/policy/)
 
 #### Headless policies
 
@@ -59,7 +59,7 @@ end
 
 ### Models and tables
 
-After [setting up authorization](../../cli/security/pundit/setup.md), a `Role` model will have been created along with a `roles` table.
+After [setting up authorization](../cli/security/pundit/setup.md), a `Role` model will have been created along with a `roles` table.
 
 The purpose of the `roles` table is to specify the roles that a user has for each policy.
 
@@ -69,7 +69,7 @@ An `after_create` callback is added to the `User` model after the authorization 
 
 #### Policy roles table
 
-Each [generated policy](../../cli/security/policy/generate.md) also comes with an associate policy roles table. For example, `eucalypt policy g post -p create edit delete` would generate a `post_policy.rb` file, and a `post_roles` table \(with create, edit and delete permissions\).
+Each [generated policy](../cli/security/policy/generate.md) also comes with an associate policy roles table. For example, `eucalypt policy g post -p create edit delete` would generate a `post_policy.rb` file, and a `post_roles` table \(with create, edit and delete permissions\).
 
 The columns in this table represent the different roles for the policy. For example, a post might have author and editor roles \(as well as an admin and default role, which every policy has by default\).
 
@@ -85,14 +85,14 @@ The `post_roles` table might look like:
 
 #### CLI tasks
 
-* [Permission](../../cli/security/policy/permission/generate.md)
-* [Role](../../cli/security/policy/role/generate.md)
+* [Permission](../cli/security/policy/permission/generate.md)
+* [Role](../cli/security/policy/role/generate.md)
 
 ### Authorization helper
 
 During authorization setup, two helper methods were defined to help with authorization.
 
-* The `authorized?` method was defined to help with checking whether the currently authenticated user is authorized to perform an action on a certain policy.
+* The `authorized?` method was defined as a boolean method that specifies whether or not the currently authenticated user is authorized to perform an action on a certain policy.
 
 
 
@@ -131,6 +131,41 @@ During authorization setup, two helper methods were defined to help with authori
   ```
 
   The `authorized?` method can be used in controllers and views \(for conditional displays\).
+
+* The `authorize` method \(which comes as part of the Pundit gem\) permits an action to be performed if done by an authorized user.
+
+
+
+  If the user is not authorized, then a `Pundit::NotAuthorizedError` is raised. This error can be handled however you like.
+
+
+
+  This is typically placed somewhere in a route handler \(as seen in this example\):
+
+
+
+  ```ruby
+  class ProductController < Eucalypt::Controller(route: '/products')
+  
+    # ...
+  
+    post '/:id/delete' do |id|
+      authenticate
+      product = Product.find id
+      authorize product, :delete?
+      product.destroy!
+      redirect to '/'
+    rescue ActiveRecord::RecordNotFound
+      status 404 # Resource not found
+      redirect to "/#{id}"
+    rescue Pundit::NotAuthorizedError
+      status 401 # Unauthorized
+      redirect to '/'
+    end
+  end
+  ```
+
+
 
 
 

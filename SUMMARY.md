@@ -77,6 +77,5 @@
   * [Blog environment](features/blog-environment/README.md)
     * [Articles](features/blog-environment/articles.md)
   * [Authentication](features/authentication.md)
-  * [Authorization](features/authorization/README.md)
-    * [Policies](features/authorization/policies.md)
+  * [Authorization](features/authorization.md)
 
