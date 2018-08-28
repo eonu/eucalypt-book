@@ -57,7 +57,7 @@ user2.save # Success
 #<User id: 1, username: "admin", encrypted_password: "$2a$10$jBtLScCHce2TPj6jvNFMWeAXfgV0rf0QAs/.omqtiIh...", ...>
 ```
 
-The confirmation method will always be `<name of field>_confirmation`.
+The confirmation method name **will always** be `<name of field>_confirmation`.
 
 You can also pass multiple field symbols to the `with_confirm` method:
 
@@ -103,7 +103,7 @@ Three helper methods are defined during the authentication setup. Both are acces
   end
   ```
 
-* `current_user` - The user object of the currently authenticated user \(or false if no user is authenticated\). Since this isn't always an explicit boolean value, it is suggested to use the `authenticated?` method for conditionals. For example:
+* `current_user` - The user object of the currently authenticated user \(or `nil` if no user is authenticated\). Since this isn't always an explicit boolean value, it is suggested to use the `authenticated?` method for conditionals. For example:
 
   ```ruby
   puts Product.all if authenticated? # Good
