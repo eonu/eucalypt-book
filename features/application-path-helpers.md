@@ -51,10 +51,16 @@ end
 
 `Eucalypt.require` allows for the requiring of multiple files relative to the application root directory. Note that it is **not** possible to specify the order in which files are required.
 
+Unlike `Kernel`'s require method, files must include their extensions.
+
 For example:
 
 ```ruby
+# Bad - Raises error due to no extension on spec_helper.rb
 Eucalypt.require 'spec', 'spec_helper'
+
+# Good
+Eucalypt.require 'spec', 'spec_helper.rb'
 Eucalypt.require 'spec', 'support', '**', '*.rb'
 ```
 
