@@ -92,7 +92,7 @@ The `post_roles` table might look like:
 
 During authorization setup, two helper methods were defined to help with authorization.
 
-* The `authorized?` method was defined as a boolean method that specifies whether or not the currently authenticated user is authorized to perform an action on a certain policy.
+* The `authorized?` method is defined as a boolean method that specifies whether or not the currently authenticated user is authorized to perform an action on a certain policy.
 
 
 
