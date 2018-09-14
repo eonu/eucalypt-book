@@ -1,7 +1,7 @@
 ---
 description: >-
-  Controllers map the application to a specified base route. Each container also
-  contains routes that extend from the base route.
+  Controllers map the application to a specified base route. Each controller
+  also contains routes that extend from the base route.
 ---
 
 # Controllers
