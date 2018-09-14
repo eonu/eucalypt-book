@@ -104,7 +104,7 @@ During authorization setup, two helper methods were defined to help with authori
 
     If using a headless policy, this can also be a symbol.
 
-  * The permission to check for. This is a symbol, a must end with a question mark `?`.
+  * The permission to check for. This is a symbol, and must end with a question mark `?`.
 
     The permission must be one of the permissions defined in the associated policy roles table. e.g. `:add?`, `edit?`, `delete?`
 
