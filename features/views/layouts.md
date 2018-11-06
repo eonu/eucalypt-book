@@ -4,7 +4,7 @@
 
 The view layout files are located in the `app/views/layouts` directory.
 
-### Default {#default}
+### Default <a id="default"></a>
 
 The default layout is set to be `main.erb`, which is a file that is already included in Eucalypt. However, this can be changed in the [core application file](../core-application-file.md).
 
@@ -14,7 +14,7 @@ The default layout is set to be `main.erb`, which is a file that is already incl
 <html>
     <head>
         <title><%= @page_title %></title>
-        <%= application :css, :js %>    
+        <%= manifest :stylesheet, :script %>    
     </head>
     <body>
         <%= yield %>
@@ -24,7 +24,7 @@ The default layout is set to be `main.erb`, which is a file that is already incl
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-**NOTE**: `application` is an [in-built helper method for including the manifest stylesheet and javascript files](../configuration/manifest-accessor.md).
+**NOTE**: `manifest` is an [in-built helper method for including the manifest stylesheet and javascript files](../configuration/manifest-accessor.md).
 
 Observe the `yield` method - this is **essential** to include in any layout file, as it specifies where the rendered content should be placed in the view.
 
@@ -44,7 +44,7 @@ If we were to render the index page by inserting the contents of `index.erb` int
 <html>
     <head>
         <title>Welcome to the welcome page!</title>
-        <%= application :css, :js %>
+        <%= manifest :stylesheet, :script %>
     </head>
     <body>
         <h1>Hello World!</h1>

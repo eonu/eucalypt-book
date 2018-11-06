@@ -42,7 +42,7 @@ The `stylesheets` sub-directory of the asset pipeline contains all of the styles
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Compressors {#compressors}
+### Compressors <a id="compressors"></a>
 
 The default stylesheet compressor is `scss` and the default script compressor/minifier is `uglify`.
 

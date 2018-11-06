@@ -4,7 +4,7 @@
 
 The manifest accessor method is in the file is located at `app/config/manifest.rb`.
 
-### Usage {#usage}
+### Usage <a id="usage"></a>
 
 * To include the manifest stylesheet file `application.css` in a view file:
 

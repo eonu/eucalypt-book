@@ -35,7 +35,7 @@ However, feel free to change the `title`, `desc` and `tags` fields in the markdo
 * `tags` - Tags indicating the topics of the article. Should be single or hyphenated words
   * e.g. `ruby`, `meta-programming`, `web-dev`, `sinatra`
 
-#### Asset path {#asset-path}
+#### Asset path <a id="asset-path"></a>
 
 The purpose of `assetpath` in the `YAML` front matter is to show the user where to access the assets for the article.
 

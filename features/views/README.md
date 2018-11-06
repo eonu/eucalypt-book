@@ -1,6 +1,6 @@
 # Views
 
-### Location {#location}
+### Location <a id="location"></a>
 
 The view files are located in the `app/views` directory.
 
@@ -8,7 +8,7 @@ The view files are located in the `app/views` directory.
 
 Eucalypt looks for view files relative to the `app/views` directory by default \(though you can change this in the [core application file](../core-application-file.md)\).
 
-#### Views directly inside directory {#views-directly-inside-directory}
+#### Views directly inside directory <a id="views-directly-inside-directory"></a>
 
 If your `views` folder structure is like the following:
 

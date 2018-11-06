@@ -11,7 +11,7 @@ description: >-
 
 The core application file can be found at `app.rb`.
 
-### Contents {#contents}
+### Contents <a id="contents"></a>
 
 The core application file contains the configurations for:
 

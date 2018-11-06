@@ -1,10 +1,10 @@
 # Initializers
 
-### Location {#location}
+### Location <a id="location"></a>
 
 The initializers directory is located at `config/initializers`.
 
-### Usage {#usage}
+### Usage <a id="usage"></a>
 
 Simply add any Ruby file to this directory to be executed as an initializer.
 
