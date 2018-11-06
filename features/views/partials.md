@@ -47,48 +47,30 @@ But ideally view files should be clean, easy to read and most importantly, isola
 
 Typically logic should be restricted to controllers, models and helpers \(as well as partials where appropriate\).
 
-To clean this view file up, we will need two things:
+To clean this view file up, we will need a new partial containing all of the `erb` code necessary for displaying projects \(Simply copying the `ruby` code part from the above view file\).
 
-* A new partial containing all of the `erb` code necessary for displaying projects \(Simply copying the `ruby` code part from the above view file\).
+{% code-tabs %}
+{% code-tabs-item title="app/views/partials/\_projects.erb" %}
+```markup
+<div id="projects">
+    <% @projects.each do |project| %>
+    <div class="project">
+        <h2><%= project[:title] %></h2>
+        <p><%= project[:description] %></p>
+        <%= link_to "Repository link", project[:link] %>
+        <ul>
+        <% project[:languages].each do |lang| %>
+            <li><span><%= lang %></span></li>
+        <% end %>
+        </ul>
+    </div>
+    <% end %>
+</div>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-  {% code-tabs %}
-  {% code-tabs-item title="app/views/partials/\_projects.erb" %}
-  ```markup
-  <div id="projects">
-      <% @projects.each do |project| %>
-      <div class="project">
-          <h2><%= project[:title] %></h2>
-          <p><%= project[:description] %></p>
-          <%= link_to "Repository link", project[:link] %>
-          <ul>
-          <% project[:languages].each do |lang| %>
-              <li><span><%= lang %></span></li>
-          <% end %>
-          </ul>
-      </div>
-      <% end %>
-  </div>
-  ```
-  {% endcode-tabs-item %}
-  {% endcode-tabs %}
-
-* A new helper method to render the partial into the view \(This can be defined in any of the helper files\).
-
-  {% code-tabs %}
-  {% code-tabs-item title="app/helpers/projects\_helper.rb" %}
-  ```ruby
-  module ProjectsHelper
-    def render_projects
-      erb :'partials/_projects', layout: false
-    end
-  end
-  ```
-  {% endcode-tabs-item %}
-  {% endcode-tabs %}
-
-**NOTE**: It is essential that we don't include a layout here, since all we want is the `erb` code in `_projects.erb`.
-
-We can then clean up our `projects.erb` file by calling the helper method in the view:
+We can then clean up our `projects.erb` file by calling the `partial` function\(which is already defined in Eucalypt\) in the view:
 
 {% code-tabs %}
 {% code-tabs-item title="app/views/projects.erb" %}
@@ -99,8 +81,18 @@ We can then clean up our `projects.erb` file by calling the helper method in the
     <li>Been an essential part of the development team</li>
 </ul>
 ​
-<%= render_projects %>
+<%= partial :'partials/_projects' %>
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+If you have variables that need to be used in the partial, simply pass them as keyword arguments in the `partial` function:
+
+```markup
+<%= partial :'partials/_projects', count: 10, top_lang: 'Ruby' %>
+<!-- Or alternatively -->
+<%= partial :'partials/_projects', {count: 10, top_lang: 'Ruby'} %>
+```
+
+The variables `count` and `top_lang` will then be usable in the partial's ERB file. They are treated as local variables, so just access them by their name.
 

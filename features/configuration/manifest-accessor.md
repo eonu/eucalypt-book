@@ -1,16 +1,12 @@
 # Manifest accessor
 
-### Location
-
-The manifest accessor method is in the file is located at `app/config/manifest.rb`.
-
-### Usage <a id="usage"></a>
+### Usage
 
 * To include the manifest stylesheet file `application.css` in a view file:
 
   ```markup
   <html>
-      <head><%= application :css %></head>
+      <head><%= manifest :stylesheet %></head>
       <body></body>
   </html>
   ```
@@ -19,7 +15,7 @@ The manifest accessor method is in the file is located at `app/config/manifest.r
 
   ```markup
   <html>
-      <head><%= application :js %></head>
+      <head><%= manifest :script %></head>
       <body></body>
   </html>
   ```
@@ -28,7 +24,7 @@ The manifest accessor method is in the file is located at `app/config/manifest.r
 
   ```markup
   <html>
-      <head><%= application :css, :js %></head>
+      <head><%= manifest :stylesheet, :script %></head>
       <body></body>
   </html>
   ```
