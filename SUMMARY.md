@@ -9,6 +9,7 @@
     * [Console](cli/core/console.md)
     * [Test](cli/core/test.md)
     * [Version](cli/core/version.md)
+    * [Rake](cli/core/rake.md)
     * [Help \(-H\)](cli/core/help.md)
   * [Generate](cli/generate/README.md)
     * [Controller](cli/generate/controller.md)
