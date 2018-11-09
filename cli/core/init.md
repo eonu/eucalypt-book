@@ -32,7 +32,7 @@ $ eucalypt i
 
 * `--silence` alias `-s`, _\(Default: False\)_
 
-  Specify whether or not to silence the output of the `git init` and `bundle install` commands \(only silences if either the `--git` or `--no-git` options are active\)
+  Specify whether or not to silence the output of the `git init` and `bundle install` commands \(only silences if either the `--git` or `--bundle` options are active\)
 
 * `--blog` alias `-b`, _\(Default: False\)_
 
