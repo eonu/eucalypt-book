@@ -70,7 +70,7 @@ To clean this view file up, we will need a new partial containing all of the `er
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-We can then clean up our `projects.erb` file by calling the `partial` function\(which is already defined in Eucalypt\) in the view:
+We can then clean up our `projects.erb` file by calling the `partial` function \(which is already defined in Eucalypt\) in the view:
 
 {% code-tabs %}
 {% code-tabs-item title="app/views/projects.erb" %}
@@ -81,7 +81,9 @@ We can then clean up our `projects.erb` file by calling the `partial` function\(
     <li>Been an essential part of the development team</li>
 </ul>
 ​
-<%= partial :'partials/_projects' %>
+<%= partial 'partials/_projects' %>
+<!-- Or alternatively -->
+<%= partial '_projects' %>
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -89,9 +91,9 @@ We can then clean up our `projects.erb` file by calling the `partial` function\(
 If you have variables that need to be used in the partial, simply pass them as keyword arguments in the `partial` function:
 
 ```markup
-<%= partial :'partials/_projects', count: 10, top_lang: 'Ruby' %>
+<%= partial '_projects', count: 10, top_lang: 'Ruby' %>
 <!-- Or alternatively -->
-<%= partial :'partials/_projects', {count: 10, top_lang: 'Ruby'} %>
+<%= partial '_projects', {count: 10, top_lang: 'Ruby'} %>
 ```
 
 The variables `count` and `top_lang` will then be usable in the partial's ERB file. They are treated as local variables, so just access them by their name.
