@@ -1,20 +1,20 @@
 ---
-description: Accessing and storing static YAML and JSON data.
+description: 'Accessing and storing static YAML, JSON and XML files, and static webpages.'
 ---
 
 # Static data
 
 ### Disambiguation
 
-This documentation page is not about serving static assets. Additionally, the `static` directory is not intended to be used for serving static assets \(other than YAML or JSON files\).
+This documentation page is **not** about serving static assets. Additionally, the `static` directory is **not** intended to be used for serving static assets 
 
 For that purpose, view the [asset pipeline](configuration/asset-pipeline/) documentation page.
 
 ### Description
 
-The `static` directory should contain structured data in the YAML or JSON formats.
+The `static` directory should contain structured data in the YAML, JSON or XML formats. Additionally, static HTML files can also be stored here.
 
-> Currently supported extensions are: `.yaml`, `.yml`, `.json` and `.geojson`.
+> Currently supported extensions are: `.xml`, `.yaml`, `.yml`, `.json` and `.geojson`.
 
 The `Static` helper constant can be accessed from anywhere within your application. This constant acts as a link to the `static` directory, allowing you to access data.
 
@@ -105,8 +105,31 @@ If configured to **not** symbolize the generated hash, then the data for the `Eu
 
 ```ruby
 Static.ruby["projects"]["frameworks"].last
-#=> {"name"=>"Rails", "repo"=>"https://github.com/eucalypt-framework/eucalypt"}
+#=> {"name"=>"Eucalypt", "repo"=>"https://github.com/eucalypt-framework/eucalypt"}
 ```
 
+### Serving static HTML files
 
+Static HTML files can be stored in the `app/static` directory, and served from there. Note that routes are relative to the `static` directory.
+
+#### Example
+
+```text
+static
+├── 404.html
+└── maintenance.html
+```
+
+```ruby
+class ApplicationController < Sinatra::Base
+  # Puts the application in maintenance mode
+  get '*' do
+    redirect '/maintenance.html'
+  end
+  
+  not_found do
+    redirect '/404.html'
+  end
+end
+```
 
