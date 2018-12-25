@@ -35,7 +35,7 @@ The configuration file consists of a number of settings that can be used to adju
 
 The only setting that does not depend on the current environment is `:log_directory_format`. 
 
-This setting specifies the `DateTime` string format for the subdirectory of the `logs` folder, where the current logs are being stored.
+This setting specifies the `DateTime` string format for the sub-directory of the `logs` folder, where the current logs are being stored.
 
 This defaults to `%Y-%m-%d_%H-%M-%S`, giving a `logs` folder structure like:
 
@@ -62,4 +62,7 @@ The configuration file contains a `configure` block for each environment. Each o
 
   * If set to `false` \(either with `set :logging, false` or `disable :logging`\), then logging via the `logger` helper method is disabled - log messages get redirected to the [system's null device](https://en.wikipedia.org/wiki/Null_device).
   * If set to a `Lumberjack::Severity` level \(e.g. `set :logging, Lumberjack::Severity::FATAL`, or `set :logging, 4`\), then logging is enabled via the `logger` helper method, which is configured to only display log messages of the specified severity or lower.
+* `:log_file`
+  * If set to `true` \(either with `set :log_file, true` or `enable :log_file`\), then `STDOUT` and `STDERR` will be redirected to log files.
+  * If set to `false` \(either with `set :log_file, false` or `disable :log_file`\), then `STDOUT` and `STDERR` will **not** be redirected to log files.
 
