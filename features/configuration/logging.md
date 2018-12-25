@@ -27,53 +27,39 @@ logger.info "This is a non-severe message."
 
 By default, only messages above \(and equal to\) the `info` level will be displayed. This can be configured in the `config/logging.rb` file.
 
-### Development
+### Settings
 
-If the application is running in the development environment, then all messages are displayed in the standard output \(STDOUT\).
+The configuration file consists of a number of settings that can be used to adjust how logging works.
 
-### Production
+#### Environment-wide settings
 
-If the application is running in the production environment:
+The only setting that does not depend on the current environment is `:log_directory_format`. 
 
-* STDOUT is redirected to a log file \(`production.stdout.log`\)
-* STDERR is redirected to a log file \(`production.stderr.log`\)
+This setting specifies the `DateTime` string format for the subdirectory of the `logs` folder, where the current logs are being stored.
 
-When the server is started, a new sub-directory is created within the `log` directory, where the name of the sub-directory is the full timestamp at the time of the server starting. 
-
-The `production.stdout.log` and `production.stderr.log` files are placed within this sub-directory.
-
-For example:
+This defaults to `%Y-%m-%d_%H-%M-%S`, giving a `logs` folder structure like:
 
 ```text
-log
-├── 2018-08-21T20-26-23p0400
+logs
+├── 2018-08-21_20-26-23
 │   ├── production.stderr.log
 │   └── production.stdout.log
-└── 2018-08-21T20-26-41p0400
-    ├── production.stderr.log
-    └── production.stdout.log
+└── 2018-08-21_20-26-41
+    ├── development.stderr.log
+    └── development.stdout.log
 ```
 
-### Test
+#### Environment-dependent settings
 
-If the application is running in the test environment:
+Logging can be fine-tuned according to the current environment. 
 
-* STDOUT is redirected to a log file \(`test.stdout.log`\)
-* STDERR is redirected to a log file \(`test.stderr.log`\)
+The configuration file contains a `configure` block for each environment. Each of these blocks can contain the following settings:
 
-When the server is started, a new sub-directory is created within the `log` directory, where the name of the sub-directory is the full timestamp at the time of the server starting. 
+* `:logging` 
+  * If set to `true` \(either with `set :logging, true` or `enable :logging`\), then logging is enabled via the `logger` helper method.
 
-The `test.stdout.log` and `test.stderr.log` files are placed within this sub-directory.
+    When set to `true`, the [logger's severity level](https://github.com/bdurand/lumberjack/blob/master/lib/lumberjack/severity.rb) is set `INFO` by default.
 
-For example:
-
-```text
-log
-├── 2018-08-21T20-26-23p0400
-│   ├── test.stderr.log
-│   └── test.stdout.log
-└── 2018-08-21T20-26-41p0400
-    ├── test.stderr.log
-    └── test.stdout.log
-```
+  * If set to `false` \(either with `set :logging, false` or `disable :logging`\), then logging via the `logger` helper method is disabled - log messages get redirected to the [system's null device](https://en.wikipedia.org/wiki/Null_device).
+  * If set to a `Lumberjack::Severity` level \(e.g. `set :logging, Lumberjack::Severity::FATAL`, or `set :logging, 4`\), then logging is enabled via the `logger` helper method, which is configured to only display log messages of the specified severity or lower.
 
