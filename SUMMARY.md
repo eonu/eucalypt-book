@@ -60,6 +60,7 @@
         * [Generate](cli/security/policy/permission/generate.md)
       * [Generate](cli/security/policy/generate.md)
 * [Features](features/README.md)
+  * [Maintenance mode](features/maintenance-mode.md)
   * [Controllers](features/controllers.md)
   * [Helpers](features/helpers.md)
   * [Views](features/views/README.md)
