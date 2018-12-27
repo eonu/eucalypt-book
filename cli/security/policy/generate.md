@@ -41,7 +41,7 @@ $ eucalypt s policy g
 
   Generate a `product` policy with permissions to `add`, `edit` and `delete`.
 
-* `$ eucalypt s policy g post -Hp add edit delete`
+* `$ eucalypt s policy g post -Hp create edit delete`
 
   Generate a headless `post` policy with permissions to `create`, `edit` and `delete`.
 
