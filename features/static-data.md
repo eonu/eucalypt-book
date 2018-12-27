@@ -6,7 +6,7 @@ description: 'Accessing and storing static YAML, JSON and XML files, and static 
 
 ### Disambiguation
 
-This documentation page is **not** about serving static assets. Additionally, the `static` directory is **not** intended to be used for serving static assets 
+This documentation page is **not** about serving static assets. Additionally, the `static` directory is **not** intended to be used for serving static assets \([other than static webpages](rendering-static-webpages.md)\)
 
 For that purpose, view the [asset pipeline](configuration/asset-pipeline/) documentation page.
 

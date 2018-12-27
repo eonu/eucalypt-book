@@ -4,7 +4,7 @@
 
 The asset pipeline constitutes the `app/assets` directory.
 
-The configuration file can be found at `config/asset_pipeline.rb`.
+The configuration file can be found at `config/assets.rb`.
 
 ### Description
 

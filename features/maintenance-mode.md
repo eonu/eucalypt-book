@@ -21,7 +21,7 @@ end
 
 A special `maintenance` route can be defined, which tells the application what action to perform when any route is requested while the application is in maintenance mode.
 
-This action is typically rendering a static webpage that details the reasons for maintenance:
+This action is typically [rendering a static webpage](rendering-static-webpages.md) that details the reasons for maintenance:
 
 {% code-tabs %}
 {% code-tabs-item title="app/controllers/application\_controller.rb" %}
