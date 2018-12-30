@@ -32,9 +32,13 @@ Observe the `yield` method - this is **essential** to include in any layout file
 
 Suppose we have an index page that says `Hello World!`:
 
+{% code-tabs %}
+{% code-tabs-item title="app/views/index.erb" %}
 ```markup
 <h1>Hello World!</h1>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 But this isn't a complete webpage without the `html`, `body` and `head` tags \(which were in the `main.erb` layout\).
 
