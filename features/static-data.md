@@ -89,7 +89,7 @@ projects:
     - name: 'Rails'
       repo: 'https://github.com/rails/rails'
     - name: 'Eucalypt'
-      repo: 'https://github.com/eucalypt-framework/eucalypt'
+      repo: 'https://github.com/eucalypt-framework/eucalypt'
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
