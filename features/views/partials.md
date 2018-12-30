@@ -8,7 +8,7 @@ The view partial files are located in the `app/views/partials` directory.
 
 Despite views, partials and layouts having separate directories, it may sometimes get confusing having to deal with all three when working on your application.
 
-Following Rails convention, file names for partials should ideally begin with an underscore.
+Following Rails convention, **file names for partials should ideally begin with an underscore**.
 
 ### Typical example pattern <a id="typical-example-pattern"></a>
 
