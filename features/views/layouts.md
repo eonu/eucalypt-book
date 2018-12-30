@@ -24,7 +24,7 @@ The default layout is set to be `main.erb`, which is a file that is already incl
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-**NOTE**: `manifest` is an [in-built helper method for including the manifest stylesheet and javascript files](../configuration/manifest-accessor.md).
+**NOTE**: `manifest` is an [in-built helper method for including the manifest stylesheet and javascript files](../manifest-accessor.md).
 
 Observe the `yield` method - this is **essential** to include in any layout file, as it specifies where the rendered content should be placed in the view.
 

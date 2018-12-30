@@ -12,5 +12,5 @@
 
 ### Accessing the manifest asset files <a id="accessing-the-manifest-asset-files"></a>
 
-To access the manifest asset files, you can use [the manifest accessor method](../manifest-accessor.md).
+To access the manifest asset files, you can use [the manifest accessor method](../../manifest-accessor.md).
 
