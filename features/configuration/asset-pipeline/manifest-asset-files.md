@@ -7,7 +7,7 @@
 
 ### More information <a id="more-information"></a>
 
-* For more information about the manifest stylesheet file, [read the comments in `application.scss`](https://github.com/eucalypt-framework/eucalypt/blob/master/lib/eucalypt/eucalypt-core/templates/eucalypt/app/assets/stylesheets/application.scss).
+* For more information about the manifest stylesheet file, [read the comments in `application.scss`](https://github.com/eonu/eucalypt/blob/master/lib/eucalypt/core/templates/eucalypt/app/assets/stylesheets/application.scss).
 * For more information about the manifest javascript file, [read the comments in `application.js`](https://github.com/eucalypt-framework/eucalypt/blob/master/lib/eucalypt/eucalypt-core/templates/eucalypt/app/assets/scripts/application.js).
 
 ### Accessing the manifest asset files <a id="accessing-the-manifest-asset-files"></a>
