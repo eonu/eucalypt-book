@@ -69,7 +69,7 @@ An `after_create` callback is added to the `User` model after the authorization 
 
 #### Policy roles table
 
-Each [generated policy](../cli/security/policy/generate.md) also comes with an associate policy roles table. For example, `eucalypt security policy g post -p create edit delete` would generate a `post_policy.rb` file, and a `post_roles` table \(with create, edit and delete permissions\).
+Each [generated policy](../cli/security/policy/generate.md) also comes with an associated policy roles table. For example, `eucalypt security policy g post -p create edit delete` would generate a `post_policy.rb` file, and a `post_roles` table \(with create, edit and delete permissions\).
 
 The columns in this table represent the different roles for the policy. For example, a post might have author and editor roles \(as well as an admin and default role, which every policy has by default\).
 

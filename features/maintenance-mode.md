@@ -28,7 +28,7 @@ This action is typically [rendering a static webpage](rendering-static-webpages.
 ```ruby
 class ApplicationController < Sinatra::Base
   maintenance do
-    static '/maintenance.html' 
+    erb :maintenance, layout: false
   end
     
   get '/' do

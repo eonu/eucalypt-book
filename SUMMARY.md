@@ -80,6 +80,5 @@
   * [Authentication](features/authentication.md)
   * [Authorization](features/authorization.md)
   * [Rendering static webpages](features/rendering-static-webpages.md)
-  * [IP whitelisting](features/ip-whitelisting.md)
   * [Maintenance mode](features/maintenance-mode.md)
 
