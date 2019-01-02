@@ -33,8 +33,6 @@ class SitePolicy < Struct.new(:user, :site)
     @user = user
     @site = site
   end
-  
-  # ...
 end
 ```
 {% endcode-tabs-item %}
@@ -52,8 +50,6 @@ class ProductPolicy
     @user = user
     @product = product
   end
-  
-  # ...
 end
 ```
 
