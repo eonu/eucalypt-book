@@ -79,6 +79,6 @@
     * [Articles](features/blog-environment/articles.md)
   * [Authentication](features/authentication.md)
   * [Authorization](features/authorization.md)
-  * [Rendering static webpages](features/rendering-static-webpages.md)
+  * [Rendering static files](features/rendering-static-webpages.md)
   * [Maintenance mode](features/maintenance-mode.md)
 

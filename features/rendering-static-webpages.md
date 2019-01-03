@@ -1,4 +1,4 @@
-# Rendering static webpages
+# Rendering static files
 
 ### Dynamic webpages
 
@@ -11,22 +11,27 @@ get '/404' do
 end
 ```
 
-### Static webpages
+### Static files
 
-However, static \(HTML\) webpages can also be rendered in a similar way to dynamic webpages, using the `static` method:
+However, static files can also be rendered in a similar way to dynamic webpages, using the `render_static` method:
+
+```ruby
+get '/404' do
+  render_static '/not_found.html'
+  # Searches for app/static/public/not_found.html
+end
+```
+
+Alternatively, the `static` method can be used to define a block. The above can be simplified into:
+
+```ruby
+static '/not_found.html', aliases: %w[/404]
+```
+
+The `static` method basically generates a `get` route for the specified file path, along with its aliases. Aliases are not required though:
 
 ```ruby
 static '/not_found.html'
-```
-
-The `static` method basically generates a `get` route for the specified file path. In this example, the file should exist at `app/static/public/not_found.html`.
-
-#### Aliases
-
-Alias routes can be given for static routes:
-
-```ruby
-static '/maintenance.html', aliases: %w[/maintenance /busy]
 ```
 
 #### Block definition

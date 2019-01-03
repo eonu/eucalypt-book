@@ -23,5 +23,9 @@ The core application file contains the configurations for:
 
 ### Defining routes
 
-Note that although `app.rb` is a controller \(`ApplicationController`\), it is not advised to define routes in this file. The file `app/controllers/application_controller.rb` is meant for that purpose. Alternatively, you can [generate a new controller](../cli/generate/controller.md).
+Routes should generally not be defined in `ApplicationController` unless they are intended to be accessible by every other controller, which is rarely the case \(apart from error routes like `error Sinatra::NotFound do ... end`, which should typically redirect to a `/404` route defined in `MainController`\).
+
+Core application routes such as the index `/` should instead be defined in `MainController`.
+
+Alternatively, you can [generate a new controller](../cli/generate/controller.md).
 
