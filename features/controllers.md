@@ -45,7 +45,7 @@ end
   * `get '/'` maps to the route `/products/`
   * `get '/:id'` maps to the route `/products/:id`
 
-### Application controller
+### Main controller
 
-The application controller works slightly differently. Since it inherits directly from `Sinatra::Base`, you cannot specify a base route, as the controller is always mounted at `/`.
+The main controller \(`MainController`\) works slightly differently. Since it inherits directly from `ApplicationController`, you cannot specify a base route, as the controller is always mounted at `/`.
 

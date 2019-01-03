@@ -23,10 +23,10 @@ views
 Then you can render the pages `index.erb` and `404.erb` in the following way:
 
 {% code-tabs %}
-{% code-tabs-item title="app/controllers/application\_controller.rb" %}
+{% code-tabs-item title="app/controllers/main\_controller.rb" %}
 ```ruby
-class ApplicationController < Sinatra::Base
-  helpers ApplicationHelper if defined? ApplicationHeler
+class MainController < ApplicationController
+  helpers MainHelper if defined? MainHelper
   
   get '/' do
     erb :index
@@ -57,10 +57,10 @@ views
 Then you can render the pages `index.erb` and `404.erb` in the following way \(note the specification of the full path relative to `app/views` for rendering the `index` page\):
 
 {% code-tabs %}
-{% code-tabs-item title="app/controllers/application\_controller.rb" %}
+{% code-tabs-item title="app/controllers/main\_controller.rb" %}
 ```ruby
-class ApplicationController < Sinatra::Base
-  helpers ApplicationHelper if defined? ApplicationHeler
+class MainController < ApplicationController
+  helpers MainHelper if defined? MainHelper
   
   get '/' do
     erb :"pages/index"

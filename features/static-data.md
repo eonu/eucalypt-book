@@ -1,5 +1,5 @@
 ---
-description: 'Accessing and storing static YAML, JSON and XML files, and static webpages.'
+description: 'Accessing and storing static YAML, JSON and XML files.'
 ---
 
 # Static data
@@ -12,7 +12,7 @@ For that purpose, view the [asset pipeline](configuration/asset-pipeline/) docum
 
 ### Description
 
-The `static` directory should contain structured data in the YAML, JSON or XML formats. Additionally, static HTML files can also be stored here.
+The `static` directory should contain structured data in the YAML, JSON or XML formats. Other files can be stored here for the purpose of serving them, but only files of these formats can be accessed.
 
 > Currently supported extensions are: `.xml`, `.yaml`, `.yml`, `.json` and `.geojson`.
 
@@ -106,30 +106,5 @@ If configured to **not** symbolize the generated hash, then the data for the `Eu
 ```ruby
 Static.ruby["projects"]["frameworks"].last
 #=> {"name"=>"Eucalypt", "repo"=>"https://github.com/eucalypt-framework/eucalypt"}
-```
-
-### Serving static HTML files
-
-Static HTML files can be stored in the `app/static` directory, and served from there. Note that routes are relative to the `static` directory.
-
-#### Example
-
-```text
-static
-├── 404.html
-└── maintenance.html
-```
-
-```ruby
-class ApplicationController < Sinatra::Base
-  # Puts the application in maintenance mode
-  get '*' do
-    redirect '/maintenance.html'
-  end
-  
-  not_found do
-    redirect '/404.html'
-  end
-end
 ```
 
