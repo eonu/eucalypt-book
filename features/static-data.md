@@ -6,13 +6,14 @@ description: 'Accessing and storing static YAML, JSON and XML files.'
 
 ### Disambiguation
 
-This documentation page is **not** about serving static assets. Additionally, the `static` directory is **not** intended to be used for serving static assets \([other than static webpages](rendering-static-webpages.md)\)
+This documentation page is **not** about serving static assets or rendering static files.
 
-For that purpose, view the [asset pipeline](configuration/asset-pipeline/) documentation page.
+* For serving static assets \(images, scripts, stylesheets, fonts, etc.\) view the [asset pipeline](configuration/asset-pipeline/) documentation page.
+* For rendering other static files, view the [rendering static files](rendering-static-webpages.md) documentation page
 
 ### Description
 
-The `static` directory should contain structured data in the YAML, JSON or XML formats. Other files can be stored here for the purpose of serving them, but only files of these formats can be accessed.
+The `static` directory should contain structured data in the YAML, JSON or XML formats. Other files can be stored here for the purpose of [rendering them](rendering-static-webpages.md), but only files of these formats can be accessed.
 
 > Currently supported extensions are: `.xml`, `.yaml`, `.yml`, `.json` and `.geojson`.
 
