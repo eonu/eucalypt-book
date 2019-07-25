@@ -40,14 +40,6 @@ $ eucalypt g s
 
   Specify whether or not to generate a table creation migration along with the model.
 
-* `--policy` alias `-p`, _\(Default: False\)_
-
-  Specify whether or not to generate a policy along with the scaffold \(will also add authentication and authorization to the controller if `--rest` option is active\).
-
-* `--headless` alias `-H`, _\(Default: False\)_
-
-  Specify whether the generated policy should be headless \(have no associated model\) \(only works if the `--policy` option is active\).
-
 ### Examples
 
 * `$ eucalypt g scaffold tweet`
@@ -69,22 +61,6 @@ $ eucalypt g s
 * `$ eucalypt g scaffold tweet -r`
 
   Generates a new scaffold with a REST-style controller.
-
-* `$ eucalypt g scaffold tweet -p`
-
-  Generates a new scaffold with a policy.
-
-* `$ eucalypt g scaffold tweet -pH`
-
-  Generates a new scaffold with a headless policy.
-
-* `$ eucalypt g scaffold tweet -rp`
-
-  Generates a new scaffold with a REST-style controller and a policy \(with authenticated and authorized BREAD routes\).
-
-* `$ eucalypt g scaffold tweet -rpH`
-
-  Generates a new scaffold with a REST-style controller and a headless policy \(with authenticated and authorized BREAD routes\).
 
 
 
