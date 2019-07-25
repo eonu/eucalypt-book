@@ -44,14 +44,6 @@ $ eucalypt i
 
   Specify the route of the blog controller \(only works if the `--blog` option is active\).
 
-* `--warden` alias `-w`, _\(Default: False\)_
-
-  Specify whether or not to set up Warden authentication after initializing the application.
-
-* `--pundit` alias `-p`, _\(Default: False\)_
-
-  Specify whether or not to set up Pundit authorization after initializing the application \(only works if the `--warden` option is active\).
-
 ### Examples
 
 * `$ eucalypt init my-new-app` 
@@ -73,8 +65,4 @@ $ eucalypt i
 * `$ eucalypt init my-new-app -br posts` 
 
   Generates a new application and runs blog environment setup at `/posts`.
-
-* `$ eucalypt init my-new-app -wp` 
-
-  Generates a new application and sets up Warden authentication and Pundit authorization.
 
