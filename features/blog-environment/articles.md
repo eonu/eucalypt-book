@@ -50,7 +50,7 @@ For more information as to why the asset path URL looks like this, read the [ass
 title: "TODO"
 desc: "TODO"
 tags: ["TODO"]
-# Only change the below fields with `simplatra blog article edit` commands!
+# Only change the below fields with `eucalypt blog article edit` commands!
 urltitle: "first-article"
 time: "2018-06-06 00:00:01"
 assetpath: "/assets/2018/06/06/first-article"
