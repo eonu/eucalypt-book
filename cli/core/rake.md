@@ -1,5 +1,5 @@
 ---
-description: Run the database migrations
+description: Run a rake task
 ---
 
 # Rake
